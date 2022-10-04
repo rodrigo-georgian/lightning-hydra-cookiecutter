@@ -1,0 +1,11 @@
+{
+    "project_name": "Lightning Hydra Package",
+    "project_slug": "{{ cookiecutter.project_name | slugify }}",
+    "package_name": "{{ cookiecutter.project_slug.replace('-', '_') }}",
+    "_copy_without_render": [
+        ".github/*"
+    ],
+    "_extensions": [
+        "cookiecutter.extensions.SlugifyExtension"
+    ]
+}
